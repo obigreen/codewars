@@ -10,6 +10,7 @@ function evenOrOdd(number) {
     }
 }
 
+
 console.log(evenOrOdd(numm));
 // let result = evenOrOdd(numm)
 // console.log(result);
