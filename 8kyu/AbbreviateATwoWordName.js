@@ -3,20 +3,31 @@
 //     The output should be two capital letters with a dot separating them.
 //
 //     It should look like this:
-//
-// Sam Harris => S.H
-//
-// patrick feeney => P.F
 
+
+// мое решение
 function abbrevName(name) {
-    let nameParts = name.split(' ');
-    return nameParts[0][0].toUpperCase() + '.' + nameParts[1][0].toUpperCase();
+    let words = name.split(" ");
+    return (
+        words[0].charAt(0).toUpperCase() + "." + words[1].charAt(0).toUpperCase()
+    )
 }
 
-// const abbrevName = name => name.match(/\b\w/g).join('.').toUpperCase()
+console.log(abbrevName("john doe"));
 
-// вот этот самый классный
-// return name.split(' ').map(i => i[0].toUpperCase()).join('.')
+// интересные решения для изучения
+// function abbrevName(name){
+//     return name.split(' ').map(i => i[0].toUpperCase()).join('.')
+// }
 
-console.log(abbrevName('Сэм Харрис'));
+
+// function abbrevName(name){
+//
+//     var nameArray = name.split(" ");
+//     return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+// }
+
+// function abbrevName(name){
+//     return name.split(' ').map(x => x.substr(0, 1).toUpperCase()).join('.');
+// }
 
